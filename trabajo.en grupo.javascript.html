@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+<script>
+ // Ingrese 3 numeros, muestre su cantidad de cifras
+            let a=prompt("Ingrese un numero");
+            let b=prompt("Ingrese un numero");
+            let c=prompt("Ingrese un numero");
+
+            console.log(a, "tiene" ,a.length,"cifras");
+            console.log(b, "tiene" ,b.length,"cifras");
+            console.log(c, "tiene" ,c.length,"cifras");
+        //Convierta los numeros en un conjunto, y muestre sus cifras 1 por 1
+                        //[0,1,2]
+            let numeros = [a,b,c];
+
+           
+
+            for (numero of numeros) {
+                console.log(numero, "tiene", numero.length,"cifras")
+            }
+        // Verifique si el numero ingresado, tiene 3 cifras o menos
+            if (a.length<=3){
+                console.log(a,"tiene",a.length,"cifras");
+            }
+
+
+
+</script>
+
+
+
+
+ </head>
+
+<body>
+    
+</body>
+</html>

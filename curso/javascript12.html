@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EjercicioArrays</title>
+
+</head>
+<body>
+    <script>
+        
+        let arrayObj = [
+                {
+                    curso: "html", 
+                    fecha: "30/09/22",
+                    duracion_horas: 36,
+                    modulos: ["moduloHtml1", "moduloHtml2", "moduloHtml3"],
+                },
+                {
+                    curso: "css", 
+                    fecha: "10/10/22",
+                    duracion_horas: 40,
+                    modulos: ["moduloCss1", "moduloCss2", "moduloCss3"],
+                },
+                {
+                    curso: "js", 
+                    fecha: "20/10/22",
+                    duracion_horas: 72,
+                    modulos: ["moduloJs1", "moduloJs2", "moduloJs3", "moduloJs4"],
+                },
+        ];
+
+                console.log(arrayObj[0].curso);
+                console.log(arrayObj[0].fecha);
+                console.log(arrayObj[0].duracion_horas);
+                console.log(arrayObj[0].modulos[0]);
+                console.log(arrayObj[0].modulos[1]);
+                console.log(arrayObj[0].modulos[2]);
+                
+                console.log(arrayObj[1].curso);
+                console.log(arrayObj[1].fecha);
+                console.log(arrayObj[1].duracion_horas);
+                console.log(arrayObj[1].modulos[0]);
+                console.log(arrayObj[1].modulos[1]);
+                console.log(arrayObj[1].modulos[2]);
+
+                console.log(arrayObj[2].curso);
+                console.log(arrayObj[2].fecha);
+                console.log(arrayObj[2].duracion_horas);
+                console.log(arrayObj[2].modulos[0]);
+                console.log(arrayObj[2].modulos[1]);
+                console.log(arrayObj[2].modulos[2]);
+                console.log(arrayObj[2].modulos[3]);
+
+                for(let dato of arrayObj){
+                    console.log("------------")
+                    for(let propiedad in dato){
+                        console.log("propiedad: ", propiedad);
+                        console.log("valor: ",dato[propiedad])
+                        //console.log(typeof dato[propiedad]);
+                        if(typeof dato[propiedad] == "object"){
+                            for(let ar of  dato[propiedad]){
+                                console.log(ar);
+                            }
+                        }
+                        
+                    }
+                }
+                
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+.container{
+    whith:100%
+    margin 0 auto;
+    height: 200px;
+    background-color: aliceblue;
+}
+@media(min-whidh:576px){
+.container{
+    max-width: 540px;
+    background-color: aliceblue;
+
+}
+@media(min-width: 768px){
+.container{
+    max-width: 720px;
+    background-color:red;
+    color: black;
+
+    @media(min-width: 992;){
+        .container{
+            max-width=960px
+            background-color:blue
+        }
+    }

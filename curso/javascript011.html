@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body >
+        <div id="container">
+            <p>
+                <label for="radio1">Colegio</label>
+                <input type="radio" class="radioAll" id="radio1" name="estudios" value="Colegio" >
+            </p>
+            
+            <p>
+                <label for="radio2">Liceo</label>
+                <input type="radio" class="radioAll" id="radio2" name="estudios" value="Liceo">
+            </p>
+            
+            <p>
+                <label for="radio3">Universidad</label>
+                <input type="radio" class="radioAll" id="radio3" name="estudios" value="Universidad">
+            </p>  
+        </div>    
+        
+
+        <input type="button" value="Valor Selecionado" onclick="mostrarSeleccionado()">
+
+        <script>
+            function mostrarSeleccionado(){
+                if(document.getElementById('radio1').checked){
+                    console.log("selecion 1");
+                }else if(document.getElementById('radio2').checked){
+                    console.log("selecion 2");
+                }else if(document.getElementById('radio3').checked){
+                    console.log("selecion 3");
+                }else{
+                    console.log("ninguno");
+                }
+
+                console.log(document.querySelectorAll("#container .radioAll"));
+
+                //console.log();
+            }           
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javacript</title>
+    </head>
+    <body>
+        <p>
+            <select id="seleccion" name="seleccion" onchange="cambiarColor()">
+                <option value="ff0000">Rojo</option>
+                <option value="00ff00">Verde</option>
+                <option value="0000ff">Azul</option>
+            </select>
+        </p>
+        <script>
+            function cambiarColor(){
+                //console.log('entre');
+                let opcion = document.getElementById('seleccion');
+
+                console.log("indice del elemnto selecionado",opcion.selectedIndex);
+                console.log("accedemos al valor",opcion.options[opcion.selectedIndex].value);
+                console.log("accedemos al texto",opcion.options[opcion.selectedIndex].text);
+            }
+        </script>
+    </body>
+</html>

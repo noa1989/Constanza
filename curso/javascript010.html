@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <p>
+                <label for="numero1">Numero 1</label>
+                <input type="text" id="numero1" name="numero1" value="1" >
+            </p>
+            <p>
+                <label for="numero2">Numero 1</label>
+                <input type="text" id="numero2" name="numero2" value="15" >
+            </p>
+
+            <p>
+                <input type="button" value="Calcular Suma" onclick="sumar()">
+            </p>
+
+
+            <div id="resultado">
+
+            </div>
+        </form>
+        <script>
+            
+            function sumar(){
+                let valor1 = document.getElementById("numero1"); 
+                let valor2 = document.getElementById("numero2"); 
+                let resultado = document.getElementById("resultado");
+                let suma = 0;
+
+                console.log(valor1); // contiene el elemento html selecionado
+                valor1 = valor1.value; // accediendo al atributo value es decir el valor introducido
+                console.log(valor1); // valor original introducido
+                console.log(typeof valor1); // Tipo de valor
+                console.log(isNaN(valor1)); // Comprara que si esta dando un valor indefinido o no calculado
+
+                valor2 = valor2.value;
+
+                suma = Number(valor1) + Number(valor2);
+
+                console.log(suma);
+
+                if(isNaN(suma)){
+                    //console.log("suma no puede ser realizada");
+                    resultado.innerHTML = "Suma no puede ser realizada";
+                }else{
+                    resultado.innerHTML = "Resultado de la suma es: "+ suma;
+                }
+                
+                //if(isNaN(valor1)){
+                //    console.log("suma no puede ser realizada");
+                //}
+
+            }
+
+            //sumar();
+        </script>
+    </body>
+</html>

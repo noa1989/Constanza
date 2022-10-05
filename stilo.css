@@ -1,0 +1,16 @@
+.miclass {
+    width: 100%;
+    height: 100px;
+    color: black;
+    background-color: blue;
+    text-align: center;
+    padding-top: 26px;
+  }
+  .miclasstwo { 
+    width: 100%;
+    height: 100px;
+    color: black;
+    background-color: silver;
+    padding-top: 26px;
+
+    }

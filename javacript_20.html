@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body >
+        <div id="container">
+            <h1>paises</h1>
+            <p>
+                <label for="">chile</label>
+                <input type="checkbox" class="list" id="check1" name="estudios" value="chile" >
+            </p>
+            
+            <p>
+                <label for="">peru</label>
+                <input type="checkbox" class="list" id="check2" name="estudios" value="peru">
+            </p>
+            
+            <p>
+                <label for="">bolivia</label>
+                <input type="checkbox" class="list" id="check3" name="estudios" value="bolivia">
+            </p>  
+            <p>
+                <label for="">argentina</label>
+                <input type="checkbox" class="list" id="check4" name="estudios" value="argentina">
+            </p>  
+        </div>    
+        
+
+        <input type="button" value="Valor Selecionado" onclick="mostrarSeleccionado()">
+
+        <script>
+            function mostrarSeleccionado(){
+               /* if(document.getElementById('check1').checked){
+                    console.log("selecion 1");
+
+                }
+                 if(document.getElementById('check2').checked){
+                    console.log("selecion 2");
+                }*/
+                 /*if(document.getElementById('check3').checked){
+                    console.log("selecion 3");
+                 }
+                 if(document.getElementById('check4').checked){
+                    console.log("selecion 4");
+                }*/
+                //console.log(document.querySelectorAll("#container .list"));
+
+                //console.log();
+
+                let paises=document.querySelectorAll("#container .list");
+
+                for (let x of paises) {                
+                    if (x.checked)
+                    {
+                        console.log(x.value)
+                    }
+                    //console.log ("posicion ", x , " valor: ", paises[0]);
+                }
+            }           
+
+        </script>
+    </body>
+</html>

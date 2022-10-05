@@ -1,0 +1,23 @@
+
+#menuhorizontal{
+   margin: 0px;
+   padding: 0px;
+   list-style-type: nome;
+
+}
+
+#menuhorizontal a{
+width: 160px;
+text-decoration: none;
+text-align: red;
+background-color: brown;
+padding: 3px 5px ;
+border-right: block;
+
+}
+#menuhorizontal li{
+    float: left;
+}
+#menuhorizontal a :hover{
+    background-color:blue ;
+}

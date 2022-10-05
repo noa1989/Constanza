@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio practico suma</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="number1">Numero 1</label>
+            <input type="text" id="number1">
+        </p>
+        <p>
+            <label for="number2">Numero 2</label>
+            <input type="text" id="number2">
+        </p>
+        <p>
+            <input type="button" value="Sumar" onclick="sumar()">
+        </p>
+        <div id="resultadoSuma">
+        </div>
+        <button type="button" onclick="cambioColor('blue')">Cambiar color resultado</button>
+
+    </form>
+
+    <script>
+
+        function sumar(){
+
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let resultadoSuma = document.getElementById("resultadoSuma");
+            let suma = 0;
+
+            suma = Number(number1) + Number(number2);
+
+
+
+        console.log(number1);
+        console.log(number2);
+        console.log("El resultado de la suma es " + suma);
+
+        //alert("El numero 1 es: " + number1.value + ", El numero 2 es "+ number2.value + ", El resultado de la suma es " + suma);
+
+        console.log(document.getElementById("resultadoSuma").innerHTML= "El resultado es: "+ suma);
+        }
+        function cambioColor(color){
+                let elemento = document.getElementById("resultadoSuma");
+                elemento.style.color = "blue" ;
+                //elemento.innerHTML = "El resultado en azul es: " + suma;
+            }
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javacript</title>
+    </head>
+    <body>
+
+        <p id="text"> Un parrafo </p>
+        <button onclick="cambioColorNew('blue')">Azul</button>
+        <button onclick="cambioColorNew('red')">Rojo</button>
+        
+        <script>
+            function cambioColor(){
+                let elemento = document.getElementById("text");
+                elemento.style.color = "red";
+                elemento.innerHTML = "Cambio de color a Rojo";
+            }
+
+            function cambioColorNew(color){
+                let elemento = document.getElementById("text");
+                elemento.style.color = color;
+                elemento.innerHTML = "Cambio de color: "+color;
+            }
+        </script>
+    </body>
+</html>

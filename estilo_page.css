@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+    #contenedor{
+    width: 100%;
+    border:blank
+    backgronund
+
+    }
+#cabecera{
+    padding: 10px;
+    color: aliceblue;
+    background-color:black ;
+
+}
+ #columna1{
+    float: left;
+    width: 200px;
+    margin: 0px;
+    padding: 10px;
+
+ }
+ #columna2{
+    margin-left: 210px;
+    border-left: 1px solid;
+    padding: 20px;
+
+ }
+ #pie{
+    padding: 10px;
+    color: aqua;
+    background-color: blue;
+ }
